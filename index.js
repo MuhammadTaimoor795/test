@@ -8,12 +8,12 @@ const url =
   "mongodb://imnurselatest:securehash@docdb-2023-06-18-09-37-25.cluster-cqtcbx2lrkhq.us-east-1.docdb.amazonaws.com:27017/?ssl=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false";
 
 //console.log("fs", fs.readFileSync("./us-east-1-bundle.pem"));
-const options = {
-  sslValidate: true,
-  sslCA: resultPath,
-};
+// const options = {
+//   sslValidate: true,
+//   sslCA: resultPath,
+// };
 
-MongoClient.connect(url, options, function (err, client) {
+MongoClient.connect(url, function (err, client) {
   if (err) {
     console.error("Error connecting to the database:", err);
     return;
