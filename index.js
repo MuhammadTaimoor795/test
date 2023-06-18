@@ -2,7 +2,7 @@ const MongoClient = require("mongodb").MongoClient;
 const fs = require("fs");
 const path = require("path");
 
-const resultPath = path.join(__dirname, "./us-east-1-bundle.pem");
+const resultPath = path.join(__dirname, "./rds-combined-ca-bundle.pem");
 console.log("_dirnam", resultPath);
 const url =
   "mongodb://imnurselatest:securehash@docdb-2023-06-18-09-37-25.cluster-cqtcbx2lrkhq.us-east-1.docdb.amazonaws.com:27017/?ssl=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false";
